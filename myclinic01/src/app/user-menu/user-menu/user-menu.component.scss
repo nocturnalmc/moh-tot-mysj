@@ -21,3 +21,47 @@
   visibility: visible;
   opacity: 1;
 }
+
+//for translate
+.toggle {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 40px;
+  background-color: #7b9cb1;
+  border-radius: 20px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.toggle input {
+  display: none;
+}
+.switch {
+  position: absolute;
+  background: white;
+  top: 5px;
+  left: 5px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border-radius: 50%;
+  transition: left 0.3s ease-in-out;
+  z-index: 20;
+}
+.toggle .label-en,
+.toggle .label-bm {
+  position: absolute;
+  top: 12px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.label-en {
+  left: 20px;
+}
+.label-bm {
+  right: 20px;
+}
+.toggle input:checked + .switch {
+  left: 43px;
+}
