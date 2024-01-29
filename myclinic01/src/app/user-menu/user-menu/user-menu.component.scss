@@ -1,0 +1,23 @@
+.usermenu {
+  width: 60px;
+  margin: 0 30px 0 auto;
+  position: relative;
+  font-size: 2rem;
+}
+.user-dropdown {
+  z-index: 10;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+  position: absolute;
+  top: 120%;
+  right: 0;
+  visibility: hidden;
+  width: 320px;
+  opacity: 0;
+  transition: all 0.1s linear;
+}
+.usermenu:hover .user-dropdown {
+  visibility: visible;
+  opacity: 1;
+}
