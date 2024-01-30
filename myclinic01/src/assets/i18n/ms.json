@@ -1,4 +1,9 @@
 {
   "clinic-admin": "Pentadbir Klinik",
-  "choose-module": "Untuk permulaan, sila pilih modul"
+  "choose-module": "Untuk permulaan, sila pilih modul",
+  "select-language": "Pilih Bahasa",
+  "menu": {
+    "appointments": "Meja Janji Temu",
+    "appointments_note": "Modul Meja Janji Temu merangkumi pengurusan janji temu dan rekod janji temu."
+  }
 }

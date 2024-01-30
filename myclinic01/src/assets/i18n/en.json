@@ -1,4 +1,9 @@
 {
   "clinic-admin": "Clinic Admin",
-  "choose-module": "Please choose a module to begin"
+  "choose-module": "Please choose a module to begin",
+  "select-language": "Select Language",
+  "menu": {
+    "appointments": "Appointment Desk",
+    "appointments_note": "Appointment Desk module includes appointment management and appointment records."
+  }
 }
