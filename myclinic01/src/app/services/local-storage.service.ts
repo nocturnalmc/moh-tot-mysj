@@ -23,4 +23,10 @@ export class LocalStorageService {
   clear() {
     localStorage.clear();
   }
+
+  appendToArray(key: string, newItem: any): void {
+    const existingArray = this.has(key) ? JSON.parse(this.get(key)) : [];
+    existingArray.push(newItem);
+    this.set(key, JSON.stringify(existingArray));
+  }
 }

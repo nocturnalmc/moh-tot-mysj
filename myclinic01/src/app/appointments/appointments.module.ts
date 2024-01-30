@@ -10,11 +10,19 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AddOrScheduleAppointmentComponent } from './add-or-schedule-appointment/add-or-schedule-appointment.component';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatInputModule } from '@angular/material/input';
+import { MatNativeDateModule } from '@angular/material/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
 @NgModule({
-  declarations: [AppointmentsComponent, AppointmentRecordsComponent, AddOrScheduleAppointmentComponent],
+  declarations: [
+    AppointmentsComponent,
+    AppointmentRecordsComponent,
+    AddOrScheduleAppointmentComponent,
+  ],
   imports: [
     CommonModule,
     FlexLayoutModule,
@@ -22,6 +30,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     UserMenuModule,
     SidebarModule,
     HttpClientModule,
+    MatDatepickerModule,
+    MatInputModule,
+    MatNativeDateModule,
     TranslateModule.forChild({
       loader: {
         provide: TranslateLoader,
