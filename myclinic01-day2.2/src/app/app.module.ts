@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import {
+  BrowserModule,
+  provideClientHydration,
+} from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -14,6 +17,8 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MAT_DATE_FORMATS } from '@angular/material/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DatePipe } from '@angular/common';
+import { EchartsxModule } from 'echarts-for-angular';
+
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -29,11 +34,7 @@ export const MY_DATE_FORMATS = {
   },
 };
 @NgModule({
-  declarations: [
-    AppComponent,
-    WelcomeComponent,
-    LoginComponent
-  ],
+  declarations: [AppComponent, WelcomeComponent, LoginComponent],
   imports: [
     BrowserModule,
     RouterModule,
@@ -43,18 +44,19 @@ export const MY_DATE_FORMATS = {
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
+        deps: [HttpClient],
+      },
     }),
     MatDatepickerModule,
     MatInputModule,
     MatNativeDateModule,
     BrowserAnimationsModule,
+    EchartsxModule,
   ],
   providers: [
     { provide: MAT_DATE_FORMATS, useValue: MY_DATE_FORMATS },
     DatePipe,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
