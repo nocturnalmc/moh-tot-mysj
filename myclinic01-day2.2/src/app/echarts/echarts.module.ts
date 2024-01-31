@@ -6,9 +6,10 @@ import { LineComponent } from './line/line.component';
 import { EchartsxModule } from 'echarts-for-angular';
 import { GraphComponent } from './graph/graph.component';
 import { PieComponent } from './pie/pie.component';
+import { MalaysiaMapComponent } from './malaysia-map/malaysia-map.component';
 
 @NgModule({
-  declarations: [EchartsComponent, LineComponent, GraphComponent, PieComponent],
+  declarations: [EchartsComponent, LineComponent, GraphComponent, PieComponent, MalaysiaMapComponent],
   imports: [CommonModule, EchartsRoutingModule, EchartsxModule],
 })
 export class EchartsModule {}

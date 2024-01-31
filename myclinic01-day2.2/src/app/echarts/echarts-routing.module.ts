@@ -4,6 +4,7 @@ import { EchartsComponent } from './echarts.component';
 import { LineComponent } from './line/line.component';
 import { GraphComponent } from './graph/graph.component';
 import { PieComponent } from './pie/pie.component';
+import { MalaysiaMapComponent } from './malaysia-map/malaysia-map.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
       {
         path: 'pie',
         component: PieComponent,
+      },
+      {
+        path: 'malaysia',
+        component: MalaysiaMapComponent,
       },
     ],
   },

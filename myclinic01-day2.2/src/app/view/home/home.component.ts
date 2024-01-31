@@ -23,4 +23,7 @@ export class HomeComponent {
   goToPieChart() {
     this.router.navigate(['/echarts/pie']);
   }
+  goToMalaysia() {
+    this.router.navigate(['/echarts/malaysia']);
+  }
 }
