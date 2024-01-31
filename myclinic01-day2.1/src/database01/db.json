@@ -1,0 +1,32 @@
+{
+  "appointments": [
+    {
+      "id": "c69a",
+      "appointmentId": "91abcecb-f81c-4d2f-9e27-8f1d6d249a38",
+      "dateTimeSlot": "2024-01-25T16:00:00.000Z",
+      "patientName": "SLADFKJLKJ",
+      "patientNric": "SDFLASDKJ"
+    },
+    {
+      "id": "8395",
+      "appointmentId": "aac6d6d8-bd89-4679-a78d-10f3d8755ad0",
+      "dateTimeSlot": "2024-01-30T03:55:24.897Z",
+      "patientName": "ALSDKFJKL",
+      "patientNric": "JLKASJDFLKJ"
+    },
+    {
+      "id": "2ec1",
+      "appointmentId": "ab4b70d7-9ddd-44a8-a1ff-92bf83d20ca6",
+      "dateTimeSlot": "2024-01-30T04:10:09.443Z",
+      "patientName": "",
+      "patientNric": ""
+    },
+    {
+      "id": "9f2a",
+      "appointmentId": "51a8bd2b-5cb7-4622-8f49-91c8954651d6",
+      "dateTimeSlot": "2024-01-30T04:12:08.097Z",
+      "patientName": "ASLDKFJKLJ",
+      "patientNric": "ASDLFKJASDFKLJ"
+    }
+  ]
+}

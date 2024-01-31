@@ -1,26 +1,23 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { LocalStorageService } from '../../services/local-storage.service';
+import { ApiService } from '../../services/api-service.service';
 @Component({
   selector: 'app-appointment-records',
   templateUrl: './appointment-records.component.html',
-  styleUrl: './appointment-records.component.scss'
+  styleUrl: './appointment-records.component.scss',
 })
 export class AppointmentRecordsComponent {
-  appointmentList:any[]=[];
-  constructor(private router: Router,
-    private localStorageService: LocalStorageService){}
-  goToAddOrScheduleAppointment(){
+  appointmentList: any[] = [];
+  constructor(private router: Router, private apiService: ApiService) {}
+  goToAddOrScheduleAppointment() {
     this.router.navigate(['/appointments/add-or-schedule-appointment']);
   }
-  ngOnInit(){
+  ngOnInit() {
     this.readList();
   }
-  readList(){
-    let strAppt = this.localStorageService.get('appointments');
-    let jsonAppt = JSON.parse(strAppt);
-    if(jsonAppt){
-      this.appointmentList = jsonAppt;
-    }
+  readList() {
+    this.apiService.getAllAppointments().subscribe((appt: any) => {
+      this.appointmentList = appt;
+    });
   }
 }
