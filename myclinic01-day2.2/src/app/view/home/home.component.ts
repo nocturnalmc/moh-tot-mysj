@@ -17,4 +17,7 @@ export class HomeComponent {
   goToLineChart() {
     this.router.navigate(['/echarts/line']);
   }
+  goToGraphChart() {
+    this.router.navigate(['/echarts/graph']);
+  }
 }

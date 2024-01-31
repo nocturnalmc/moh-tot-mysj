@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { EchartsComponent } from './echarts.component';
 import { LineComponent } from './line/line.component';
+import { GraphComponent } from './graph/graph.component';
 
 const routes: Routes = [
   {
@@ -11,6 +12,10 @@ const routes: Routes = [
       {
         path: 'line',
         component: LineComponent,
+      },
+      {
+        path: 'graph',
+        component: GraphComponent,
       },
     ],
   },
