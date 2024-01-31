@@ -20,4 +20,7 @@ export class HomeComponent {
   goToGraphChart() {
     this.router.navigate(['/echarts/graph']);
   }
+  goToPieChart() {
+    this.router.navigate(['/echarts/pie']);
+  }
 }

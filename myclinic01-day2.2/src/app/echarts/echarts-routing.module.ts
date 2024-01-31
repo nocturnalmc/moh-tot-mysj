@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { EchartsComponent } from './echarts.component';
 import { LineComponent } from './line/line.component';
 import { GraphComponent } from './graph/graph.component';
+import { PieComponent } from './pie/pie.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
       {
         path: 'graph',
         component: GraphComponent,
+      },
+      {
+        path: 'pie',
+        component: PieComponent,
       },
     ],
   },
