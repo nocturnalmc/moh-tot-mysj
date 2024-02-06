@@ -15,15 +15,10 @@
     <modules>
         <module>my-first-test-api</module>
         <module>mongodb-rest</module>
+        <module>my-kafka</module>
     </modules>
     <properties>
         <maven.compiler.release>21</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-    </dependencies>
 </project>
