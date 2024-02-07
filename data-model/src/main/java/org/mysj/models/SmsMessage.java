@@ -1,4 +1,4 @@
-package org.test.models;
+package org.mysj.models;
 
 @lombok.AllArgsConstructor
 @lombok.NoArgsConstructor

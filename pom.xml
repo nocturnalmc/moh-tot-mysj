@@ -13,11 +13,20 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>my-first-test-api</module>
+        <module>patient-ms</module>
         <module>mongodb-rest</module>
         <module>my-kafka</module>
         <module>data-model</module>
+        <module>appointment-ms</module>
+        <module>common-ms</module>
     </modules>
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
     <properties>
         <maven.compiler.release>21</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
