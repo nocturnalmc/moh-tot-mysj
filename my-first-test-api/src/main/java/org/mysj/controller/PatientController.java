@@ -1,4 +1,4 @@
-package org.mysj;
+package org.mysj.controller;
 
 import org.mysj.service.PatientService;
 import org.springframework.web.bind.annotation.*;
