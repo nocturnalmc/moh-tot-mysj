@@ -1,8 +1,8 @@
 package org.mysj.models;
 
-@lombok.AllArgsConstructor
-@lombok.NoArgsConstructor
 @lombok.Data
+@lombok.NoArgsConstructor
+@lombok.AllArgsConstructor
 public class SmsMessage {
 
     private String phoneNumber;

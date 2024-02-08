@@ -15,7 +15,7 @@
     <modules>
         <module>patient-ms</module>
         <module>mongodb-rest</module>
-        <module>my-kafka</module>
+        <module>notification-ms</module>
         <module>data-model</module>
         <module>appointment-ms</module>
         <module>common-ms</module>
